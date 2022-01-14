@@ -10,8 +10,14 @@
 5. Setting an SSH Key
 7. Optimizing Remote Running
 ``` 
+---
+### Insatlling VScode:
+For the first step, we will need to install VScode, which is the editor that we will use. 
 
-This is a screenshot
+First we need to go to [https://code.visualstudio.com](https://code.visualstudio.com) and download it.
+
+
+it should look something like this once you open it:
 
 
 ![Image](Get_Started.png)
