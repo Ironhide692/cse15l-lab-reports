@@ -83,16 +83,31 @@ First, I ran this in my computer. After that, I copied the file to the remote co
  ### Setting an SSH Key:
  > In this step I implemented an SSH key to be able to log in without a password.
 
- In order to do this I opened powershell and typed <mark>ssh-keygen -t ed25519</mark>
+ I had a few problems in doing this, but the optimal way to do it is opening powershell as administrator. 
 
- This appeared next and I just hit enter: 
+ ![Image](powershell.png)
+ 
+ Once in there, I generated my key by typing the following command: <mark>ssh-keygen -t ed25519</mark>  
+ I just hit enter after this, and then copied and pasted the next commands:
 
-    Generating public/private ed25519 key pair.
-    Enter file in which to save the key (C:\Users\username\.ssh\id_ed25519):
+    - Get-Service ssh-agent | Set-Service -StartupType Manual
+    - Start-Service ssh-agent
+    - Get-Service ssh-agent
+    - ssh-add \Users\perez\.ssh\id_ed25519
 
-After this, the terminal should disply this message meaning that the key was generated:
+![Image](powerssh.png)
 
- ![Image](sshkey.png)
+Then, I moved on to copy the public key in the server. For this I opened VScode terminal and input these command:
+
+    ssh cs15lwi22asi@ieng6.ucsd.edu
+    Password:
+    $ mkdir .ssh
+    $ exit
+    $ scp C:\Users\perez\.ssh\id_ed25519.pub cs15lasi22@ieng6.ucsd.edu:~\.ssh\authorized_keys
+After this, I was able to log in withouth a pass word as seen in the following image:
+
+
+ ![Image](loged.png)
 
 
 
