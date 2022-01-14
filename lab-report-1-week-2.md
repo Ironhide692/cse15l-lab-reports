@@ -79,6 +79,12 @@ First, I ran this in my computer. After that, I copied the file to the remote co
 
  ![Image](whereami.png)
 
+ ---
+ ### Setting an SSH Key:
+ > In this step I implemented an SSH key to be able to log in without a password.
+
+ In order to do this I opened powershell and typed <mark>ssh-keygen -t ed25519</mark>
 
 
-<mark>Marked text</mark>
+
+
