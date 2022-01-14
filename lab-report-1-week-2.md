@@ -72,8 +72,14 @@ This should appear next. That means that you succesfuly connected to the server.
 ### Try Some Commands:
 > In this step we are going to explore some commands that will be useful for different practices.
 
+These are the commands to try:
 
+cd ~
+cd
+ls -lat
+ls -a
+ls <directory> where <directory> is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where the abc is one of the other group members’ username
+cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
+cat /home/linux/ieng6/cs15lwi22/public/hello.txt
 
-Try running the commands cd, ls, pwd, mkdir, and cp a few times in different ways, both on your computer, and on the remote computer after ssh-ing. Discuss in your group what you see. Can you cause them to produce error messages? What do they mean? If you’re on Windows, what happens when you use them on Windows?
-
-Here are some specific useful commands to try:
+<mark>Marked text</mark>
