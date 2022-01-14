@@ -8,12 +8,12 @@
 3. Try Some Commands
 4. Move Files with scp
 5. Setting an SSH Key
-7. Optimizing Remote Running
+6. Optimizing Remote Running
 ``` 
 ---
 ### Insatlling VScode:
->For the first step, we will need to install VScode, which is the editor that we will use.  
-First we need to go to [https://code.visualstudio.com](https://code.visualstudio.com) and download it.
+>For the first step, you will need to install VScode, which is the editor that you will use.  
+Just go to [https://code.visualstudio.com](https://code.visualstudio.com) and download it.
 
 It should look something like this once you open it:
 
@@ -25,61 +25,60 @@ It should look something like this once you open it:
 >In this step we are going to connect to a server to do 
 work there. This is pretty useful because you can do work from any part of the world that has internet connection.  
 
-There is a couple steps in order to do this. The first one (for windows) is to install OpenSSh. This program will allow us to connect to other computers.
-
- Newer versions of windows as 10 and 11 often have this already installed. You can check it by going to **Settings → Apps → Optional Features** and search for SSH. It should appear there.  
+There is a couple steps in order to do this. The first one is to install OpenSSh. In my case it was already installed. To check this go to **Settings → Apps → Optional Features** and search for SSH. 
 In case it is not installed, just click on add features and search it there.
 
 ![Image](ssh.png)
 
-After this, we go to VScode and open a new terminal. In the terminal we need to input the following command:
+After this, let's go to VScode and open a new terminal. In the terminal I typed the following command:
 
-**Note: replace zz by the letter in your account. you can find it [here](https://sdacs.ucsd.edu/~icc/index.php).**
 
-    $ ssh cs15lwi22zz@ieng6.ucsd.edu
+    $ ssh cs15lwi22asi@ieng6.ucsd.edu
 
-After that, you will receive this message:
+After that, this message appears:
 
-    ⤇ ssh cs15lwi22zz@ieng6.ucsd.edu
+    ⤇ ssh cs15lwi22asi@ieng6.ucsd.edu
     The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
     RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-Type yes, and enter your password. 
+Just typed yes, and entered the password. 
 
-```
-⤇ ssh cs15lwi22zz@ieng6.ucsd.edu
-The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
-RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-Password: 
-Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
-quota: No filesystem specified.
-Hello cs15lwi22zz, you are currently logged into ieng6-203.ucsd.edu
+ ![Image](loged_in.png)
 
-You are using 0% CPU on this system
-
-Cluster Status 
-Hostname     Time    #Users  Load  Averages  
-ieng6-201   23:25:01   0  0.08,  0.17,  0.11
-ieng6-202   23:25:01   1  0.09,  0.15,  0.11
-ieng6-203   23:25:01   1  0.08,  0.15,  0.11
-
-Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
-```
-This should appear next. That means that you succesfuly connected to the server.
+This appeared next. That means a succesful connection to the server has been stablished.
 
 ---
 ### Try Some Commands:
-> In this step we are going to explore some commands that will be useful for different practices.
+> In this step I tried some commands that areb useful for different practices.
 
-These are the commands to try:
+These are the commands I used:
 
-cd ~
-cd
-ls -lat
-ls -a
-ls <directory> where <directory> is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where the abc is one of the other group members’ username
-cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
-cat /home/linux/ieng6/cs15lwi22/public/hello.txt
+* cd ~
+* cd
+* ls -a
+* ls -lat
+* cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
+* cat /home/linux/ieng6/cs15lwi22/public/hello.txt
+* exit
+
+ ![Image](commands.png)
+ 
+ This is the output I got.
+
+ ---
+
+### Moving Files with scp:
+> In this part I had to copy a file from my local computer to the remote server. This was done using scp.
+
+To test this, I created the WhereAmI.java file wchich basically was a program that its output was the operating system, the name of the user among other things.
+
+First, I ran this in my computer. After that, I copied the file to the remote computer using this command:
+
+    scp WhereAmI.java cs15lwi22asi@ieng6.ucsd.edu:~/
+ Then I executed the program in the server and got this:
+
+ ![Image](whereami.png)
+
+
 
 <mark>Marked text</mark>
