@@ -85,6 +85,14 @@ First, I ran this in my computer. After that, I copied the file to the remote co
 
  In order to do this I opened powershell and typed <mark>ssh-keygen -t ed25519</mark>
 
+ This appeared next and I just hit enter: 
+
+    Generating public/private ed25519 key pair.
+    Enter file in which to save the key (C:\Users\username\.ssh\id_ed25519):
+
+After this, the terminal should disply this message meaning that the key was generated:
+
+ ![Image](sshkey.png)
 
 
 
