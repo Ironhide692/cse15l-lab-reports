@@ -80,7 +80,8 @@ First, I ran this in my computer. After that, I copied the file to the remote co
  ![Image](whereami.png)
 
  ---
- ### Setting an SSH Key:
+
+### Setting an SSH Key:
  > In this step I implemented an SSH key to be able to log in without a password.
 
  I had a few problems in doing this, but the optimal way to do it is opening powershell as administrator. 
@@ -104,9 +105,13 @@ Then, I moved on to copy the public key in the server. For this I opened VScode 
     $ mkdir .ssh
     $ exit
     $ scp C:\Users\perez\.ssh\id_ed25519.pub cs15lasi22@ieng6.ucsd.edu:~\.ssh\authorized_keys
+
+
 After this, I was able to log in withouth a pass word as seen in the following image:
 
  ![Image](loged.png)
+
+ ---
 
  ### Optimizing Remote Running:
  >For this part I edited WhereAmI.java and run it on the server in the most efficient way possible.
