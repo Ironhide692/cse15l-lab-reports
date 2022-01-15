@@ -1,33 +1,13 @@
 
 # Jerson Perez
-
 ## Main Page
 
-this is a link [Link](https://ucsd-cse15l-w22.github.io/week/week2/#lab-tasks)
+
 
 ![Image](https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg)
 
-> Blockquote
-* first
-* second
-* third
+here you will find my lab reports:
 
-1. One
-2. Two
-3. Three
-
----
-
-`Inline code` testing format
-
-```
-# code block
-print '3 backticks or'
-print 'indent 4 spaces'
-```
-changing the document
-
-[Lab Report 1](lab-report-1-week-2.html)
-
-
+<big><pre>
 [Lab Report 1](https://ironhide692.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+</pre></big>
