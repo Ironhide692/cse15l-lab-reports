@@ -106,8 +106,16 @@ Then, I moved on to copy the public key in the server. For this I opened VScode 
     $ scp C:\Users\perez\.ssh\id_ed25519.pub cs15lasi22@ieng6.ucsd.edu:~\.ssh\authorized_keys
 After this, I was able to log in withouth a pass word as seen in the following image:
 
-
  ![Image](loged.png)
+
+ ### Optimizing Remote Running:
+ >For this part I edited WhereAmI.java and run it on the server in the most efficient way possible.
+
+First I made the change to the file and pressed **ctrl + s** to save it. Then, I used the up arrow key to retrieved previous command. Also, I compiled and ran the program in the same line by separating them with a semicolon.
+
+![Image](last.png)
+
+
 
 
 
