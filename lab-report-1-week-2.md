@@ -40,12 +40,13 @@ After that, this message appears:
     ⤇ ssh cs15lwi22asi@ieng6.ucsd.edu
     The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
     RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
-    Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-Just typed yes, and entered the password. 
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?  
+    
+Just typed yes, and entered the password.
 
  ![Image](loged_in.png)
 
-This appeared next. That means a succesful connection to the server has been stablished.
+When this shows up that means a succesful connection to the server has been stablished.
 
 ---
 ### Try Some Commands:
