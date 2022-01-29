@@ -2,16 +2,17 @@
 
 **For this lab we looked at the file MarkdownParse.java and make changes to pass the following test cases:**
 
+```
+Test 1: was a normal link with parenthesis inside it.  
+ -goog()le.com
 
->Test 1: was a normal link with parenthesis inside it.  
- ```-goog()le.com```
+Test 2: was a normal link, and one lacking the end parenthesis.  
+ -[a-link] (www.google.com 
+ -[Lab Report 1](lab-report-1-week-2.html)</mark> 
 
->Test 2: was a normal link, and one lacking the end parenthesis.  
-```-[a-link] (www.google.com```  
- ```-[Lab Report 1](lab-report-1-week-2.html)```
-
->Test 3:
- ```-was an empty file```
+Test 3:
+ -was an empty file
+ ```
 
 ### The first change done was the one that follows:
 
