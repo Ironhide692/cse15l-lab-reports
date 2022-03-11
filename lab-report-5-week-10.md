@@ -71,6 +71,6 @@ For this the correct implementation was also the one provided. The expected outp
      }
 ```
 
-
+So, we have reach the end of this lab report which was the last one. Thanks for tuning in! :)
 
 
