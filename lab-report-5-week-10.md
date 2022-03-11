@@ -1,7 +1,7 @@
 # **Lab Report - Week 10 :)**
 
 ## In this weeks report we will:
-Compare the implimentation of my MarkdownParse and the one provided in lab 9. I will compare two test and see the different outut that each implementation shows. To find these test I just searched for intereting test cases manually.
+Compare the implementation of my MarkdownParse and the one provided in lab 9. I will compare two test and see the different output that each implementation shows. To find these tests I just searched for intereting test cases manually.
 
 ---
 
@@ -42,6 +42,8 @@ if(openParen == -1) break;
 toReturn.add(markdown.substring(openParen + 1, closeParen));
 ```
 
+---
+
 ### Second test case:
 >Test 489
 
@@ -71,6 +73,7 @@ For this the correct implementation was also the one provided. The expected outp
      }
 ```
 
-So, we have reach the end of this lab report which was the last one. Thanks for tuning in! :)
+
+#### So, we have reach the end of this lab report which was the last one. Thanks for tuning in! :)
 
 
